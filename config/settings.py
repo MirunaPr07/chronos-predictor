@@ -59,7 +59,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-# Database
+# Database SQL
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -97,7 +97,7 @@ CELERY_BEAT_SCHEDULE = {
     },
 }
 
-# API Keys din .env
+# API Keys -> .env
 OPENWEATHER_API_KEY = os.getenv('OPENWEATHER_API_KEY', '')
 COINGECKO_API_KEY = os.getenv('COINGECKO_API_KEY', '')
 
