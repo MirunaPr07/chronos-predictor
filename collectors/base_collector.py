@@ -23,7 +23,7 @@ class BaseCollector(ABC):
         self._thread = threading.Thread(
             target=self._run,
             name=f"Thread-{self.name}",
-            daemon=True  # stops automatically when the program exits
+            daemon=True  # auto stops when the program exits
         )
         self._thread.start()
         print(f"[{self.name}] Thread started")
